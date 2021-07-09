@@ -1,0 +1,112 @@
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    src: local(""),
+        url("../../../fonts/montserrat-v15-latin-regular.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("../../../fonts/montserrat-v15-latin-regular.woff")
+            format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.main_wrapper {
+    position: relative;
+    width: 1920px;
+    background-color: #e2ceff;
+}
+
+/*header start  */
+.header {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1920px;
+    height: 1080px;
+    margin: 0 auto;
+    background-image: url(../assets/header_background.png);
+    z-index: 1;
+}
+/*start navigation*/
+.header_nav {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1260px;
+    height: 148px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 3;
+}
+
+.nav_item {
+    margin-right: 40px;
+}
+
+.navr_item:last-child {
+    margin-right: 0px;
+}
+
+.nav_logo {
+    width: 150px;
+    height: 148px;
+}
+
+.nav_link {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav_list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 60px; /* centr */
+}
+
+.nav_link:hover,
+.nav_link:focus,
+.nav_link:active {
+    text-decoration-line: underline;
+    color: #e2ceff;
+}
+/*header styles ends*/
+
+.head_h1 {
+    position: relative;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 85px;
+    letter-spacing: 0.15em;
+    color: #ffffff;
+    margin: 0 auto;
+    top: -100px;
+}
+.head_h2 {
+    position: relative;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    top: -500px;
+}
