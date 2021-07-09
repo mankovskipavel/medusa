@@ -78,11 +78,7 @@ body {
 
     z-index: 4;
 }
-.button_find-more__link:hover,
-.button_find-more__link:active,
-.button_find-more__link:focus {
-    /* text-decoration: underline;*/
-}
+
 
 .button_find-more:hover,
 .button_find-more:focus {
