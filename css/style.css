@@ -72,6 +72,7 @@ body {
     letter-spacing: 0.15em;
     text-transform: uppercase;
     color: #ffffff;
+    text-decoration: none;
 }
 .button_find-more {
     position: relative;
@@ -83,7 +84,19 @@ body {
     box-shadow: 0px 10px 40px rgba(197, 118, 253, 0.58);
     border-radius: 28px;
     border: 0px;
+
     z-index: 4;
+}
+.button_find-more__link:hover,
+.button_find-more__link:active,
+.button_find-more__link:focus {
+   /* text-decoration: underline;*/
+}
+
+.button_find-more:hover,
+.button_find-more:focus {
+   /* background-color: #e2ceff;*/
+   background-color: rgba(197, 118, 253, 0.58);
 }
 
 /*header start  */
@@ -127,14 +140,12 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-left: 60px; /* centr */
 }
 
 .header_link:hover,
 .header_link:focus,
-.header_link:active,
-.header_button:hover,
-.header_button:active,
-.header_button:focus {
+.header_link:active {
     text-decoration-line: underline;
     color: #e2ceff;
 }
