@@ -9,15 +9,6 @@
             url("../fonts/montserrat-v15-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-@font-face {
-    font-family: "Open_Sans";
-    font-style: normal;
-    font-weight: 400;
-    src: local(""),
-        url("../fonts/open-sans-v18-latin-regular.woff2") format("woff2"),
-        /* Chrome 26+, Opera 23+, Firefox 39+ */
-            url("../fonts/open-sans-v18-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
 body {
     overflow-x: hidden;
 }
@@ -104,7 +95,7 @@ body {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    width: 1236px;
+    width: 1436px;
     height: 148px;
     padding-top: 20px;
     margin: 0 auto;
@@ -126,7 +117,7 @@ body {
 .nav_link {
     font-family: Montserrat;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 15px;
     line-height: 18px;
     text-transform: uppercase;
