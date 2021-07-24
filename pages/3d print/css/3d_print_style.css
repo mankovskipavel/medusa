@@ -1,5 +1,5 @@
 body {
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 
 .main_wrapper {
@@ -114,7 +114,7 @@ body {
 }
 
 .how-it-works_p {
-    width: 1027px;
+    width: 827px;
     font-family: Open Sans;
     font-style: normal;
     font-weight: 400;
@@ -129,21 +129,24 @@ body {
 
 .information-block {
     width: 1500px;
-    height: 501px;
+    height: 650px;
     display: flex;
     margin: 200px auto 0px;
 }
 .information-item {
-    width: 606px;
-    margin-bottom: 50px;
+    height: 200px;
+    width: 680px;
+    margin-top: 50px;
+    margin-left: 100px;
 }
 .informayion-block_h3 {
     font-family: Montserrat;
     font-style: normal;
     font-weight: 300;
-    font-size: 36px;
-    line-height: 44px;
+    font-size: 24px;
+    line-height: 38px;
     color: #1d1d1d;
+    margin-bottom: 20px;
 }
 .information-block_p {
     width: 606px;
@@ -154,6 +157,8 @@ body {
     font-size: 18px;
     line-height: 26px;
     color: #313131;
+    margin-left: 20px;
+   
 }
 .information-block_right-column {
     margin-left: auto;
@@ -177,7 +182,7 @@ body {
 .information-block-second_column-right {
     width: 560px;
     height: 431px;
-    padding: 200px;
+    
 }
 .information-block_third {
     width: 1920px;
@@ -186,8 +191,7 @@ body {
 }
 .information-block-third_column-left {
     width: 560px;
-    height: 431px;
-    padding: 200px;
+    height: 431px;   
 }
 .information-block_third_rifht-image {
     width: 960px;
