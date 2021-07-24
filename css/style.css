@@ -10,19 +10,18 @@
 }
 
 body {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 .main_wrapper {
     position: relative;
     width: 1920px;
     height: 1080px;
-    background: radial-gradient(
-        71.54% 107.41% at 39.35% 25.56%,
-        #e3cfe6 0%,
-        #7c649d 61.07%,
-        #1c1038 100%
-    );
+    background-image: url(../assets/landing_BG.jpg);
+    background-repeat: no-repeat;
     z-index: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .bacground_medusa {
@@ -35,23 +34,12 @@ body {
     background-image: url(../assets/Medusa.png);
     mix-blend-mode: overlay;
 }
-.background_blinks {
-    position: absolute;
-    left: -138px;
-    top: 166px;
-    width: 2183px;
-    height: 787px;
-    background-image: url(../assets/Blinks.png);
-    background-repeat: no-repeat;
-    z-index: 1;
-}
+
 .text_logo {
-    position: relative;
     background-image: url(../assets/Text-Logo.png);
     width: 1042px;
     height: 157px;
-    top: 400px;
-    left: 440px;
+    margin-top: 400px;
 }
 
 .button_find-more__link {
@@ -66,23 +54,18 @@ body {
     text-decoration: none;
 }
 .button_find-more {
-    position: relative;
     width: 250px;
     height: 50px;
-    left: 835px;
-    top: 530px;
     background: #9e79d7;
     box-shadow: 0px 10px 40px rgba(197, 118, 253, 0.58);
     border-radius: 28px;
     border: 0px;
-
+    margin-top: 150px;
     z-index: 4;
 }
 
-
 .button_find-more:hover,
 .button_find-more:focus {
-    /* background-color: #e2ceff;*/
     background-color: rgba(197, 118, 253, 0.58);
 }
 
@@ -91,12 +74,16 @@ body {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    width: 1436px;
     height: 148px;
     padding-top: 20px;
     margin: 0 auto;
+    align-self: center;
 }
-
+.header_nav{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
 .nav_item {
     margin-right: 40px;
 }
@@ -108,6 +95,7 @@ body {
 .nav_logo {
     width: 150px;
     height: 148px;
+    margin-left: 60px;
 }
 
 .nav_link {
@@ -127,13 +115,14 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-left: 60px; /* centr */
-}
+    z-index: 5;
 
+}
 .nav_link:hover,
 .nav_link:focus,
 .nav_link:active {
     text-decoration-line: underline;
     color: #e2ceff;
 }
+
 /*header styles ends*/
