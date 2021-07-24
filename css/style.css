@@ -10,11 +10,13 @@
 }
 
 body {
+    width: 100%;
+    margin: 0 auto;
     /* overflow-x: hidden; */
 }
 .main_wrapper {
     position: relative;
-    width: 1920px;
+    max-width: 1920px;
     height: 1080px;
     background-image: url(../assets/landing_BG.jpg);
     background-repeat: no-repeat;
@@ -22,13 +24,16 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 auto;
 }
 
-.bacground_medusa {
+.background_medusa {
     position: absolute;
     width: 684px;
     height: 856px;
-    left: 631px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translateX(-50%);
     top: 181px;
     z-index: 2;
     background-image: url(../assets/Medusa.png);
@@ -37,9 +42,10 @@ body {
 
 .text_logo {
     background-image: url(../assets/Text-Logo.png);
-    width: 1042px;
+    background-repeat: no-repeat;
+    width: 1042px; /* FIX width */
     height: 157px;
-    margin-top: 400px;
+    margin: 400px auto 0px;
 }
 
 .button_find-more__link {
@@ -84,18 +90,16 @@ body {
     flex-direction: column;
     align-items: center;
 }
-.nav_item {
-    margin-right: 40px;
-}
 
-.navr_item:last-child {
+
+.nav_item:last-child {
     margin-right: 0px;
 }
 
 .nav_logo {
     width: 150px;
     height: 148px;
-    margin-left: 60px;
+   /*  margin-left: 60px; */
 }
 
 .nav_link {
@@ -107,6 +111,7 @@ body {
     text-transform: uppercase;
     color: #ffffff;
     text-decoration: none;
+    margin-top: 5px;
 }
 
 .nav_list {
@@ -122,7 +127,127 @@ body {
 .nav_link:focus,
 .nav_link:active {
     text-decoration-line: underline;
-    color: #e2ceff;
+    color: #5F4A80;
+}
+.nav_item {
+    float: left;
+    position: relative;
+    margin-right: 40px;
+}
+.nav_sublist{
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 300px;  
+
+}
+.nav_subitem{
+    float: none;
+    margin-top: 10px;
 }
 
+.nav_item:hover .nav_sublist{
+    display: block;
+}
+.nav_sublist a{
+    width: 200px;
+}
 /*header styles ends*/
+
+
+/*burger menu*/
+.menu-burger__header span, .menu-burger__header:after, .menu-burger__header:before{
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    background: #5F4A80;
+    margin: 0 auto;
+    z-index: 10;
+  }
+  .menu-burger__header span{
+    top: 16px;  
+  }
+  .menu-burger__header:after, .menu-burger__header:before{
+    content: '';
+  }
+  .menu-burger__header:after{
+    bottom: 5px;
+  }
+  .menu-burger__header:before{
+    top: 5px;
+  }
+  
+  
+  .menu-burger__header {
+    position: absolute; /* задаем относительное позиционирование */
+    width: 40px; /* определяем размеры блока */
+    height: 35px;
+    top: 10px;
+    right: 10px;
+    display: block;
+    margin-left:auto;
+    visibility: hidden;
+  }
+
+/*adaptive*/
+@media (max-width: 1380px) {
+/*     .nav_logo{
+        display: none;
+    } */
+  /*   .nav_list{
+        margin-top: 70px;
+    } */
+  /*   .nav_item:nth-child(4){
+        display: none;
+    } */
+}
+@media (max-width: 1200px) {
+    /* .nav_link{
+        font-size: 12px;
+    }
+    .nav_item{
+        margin-right: 15px;
+    } */
+    .text_logo {
+        /* background-size: cover; */
+        background-image: url(../assets/Text-Logo-600.png);
+        height: 120px;
+        width: 600px;
+    }
+}
+@media (max-width: 680px) {
+   /*  .nav_link{
+        font-size: 8px;
+    }
+    .nav_item{
+        margin-right: 10px;
+    } */
+}
+@media (max-width: 780px) {
+    .header_nav {
+        visibility: hidden;
+      }
+    .menu-burger__header {
+        visibility: visible;
+        z-index: 10;
+        top: 20px;
+        right: 30px;
+        width: 36px;
+      }
+    .body{
+        overflow-x: hidden;
+    }
+    .background_medusa{
+       /*  margin-top: 400px; */
+        height: 476px;
+        width: 380px;
+        background-size: cover;
+    }
+    .text_logo {
+        background-image: url(../assets/Text-Logo-380.png);
+        height: 90px;
+        width: 380px;
+    }
+}
+
+
