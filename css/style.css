@@ -132,7 +132,7 @@ body {
 .nav_link:focus,
 .nav_link:active {
     text-decoration-line: underline;
-    color: #5f4a80;
+    color: #250e4b;
 }
 .nav_item {
     float: left;
